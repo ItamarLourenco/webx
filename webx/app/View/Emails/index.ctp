@@ -21,7 +21,7 @@ function showEmails(){
 				}	
 				$('#emails').html(emails);
 			},
-			beforeSend:function(){
+			complete:function(){
 				var d = new Date();
 				$('#log').html('Atualizado em ' + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
 			},
